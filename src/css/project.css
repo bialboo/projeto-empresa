@@ -1,0 +1,138 @@
+/* Porjetos realizados*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela */
+    margin: 0;
+    padding: 0; /* Compensa a altura do header fixo */
+    color: #333;
+    background-color: #b3b2b1;
+  
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color:  black;
+    color: #fff;
+    padding: none;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+/* Principal conteúdo da página */
+main {
+    flex: 1; /* Faz o main crescer para ocupar o espaço restante */
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+section {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.project {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0;/
+}
+.images {
+    position: relative;
+    display: flex;
+    align-content: space-between;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide.on {
+    opacity: 1;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-top: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button img {
+    width: 100%;
+    height: 100%;
+}
+
+.button.prevButton {
+    transform: rotate(180deg);
+}
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section {
+        margin: 0; /* Aproxima ainda mais as sections */
+    }
+    .images {
+        width: 100%; /* Ajusta a largura para caber em telas pequenas */
+    }
+
+    .button {
+        width: 25px; /* Reduz o tamanho dos botões */
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        margin: 0; /* Remove quase todo o espaçamento entre sections */
+    }
+
+    .button {
+        width: 15px; /* Ajusta ainda mais o tamanho dos botões */
+        height: 15px;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="/src/css/contact.css"> 
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/index.html#about">Sobre</a>
+            <a href="/src/html/projects.html">Projetos</a>
+            <a href="/src/html/contact.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="tela-contato">
+        <h1>Entre em Contato Conosco</h1>
+        <p>Para atendimento rápido, clique no botão abaixo para falar diretamente conosco pelo WhatsApp.</p>
+        
+        <button onclick="redirecionarWhatsApp()" class="whatsapp-button">
+            Fale conosco no WhatsApp
+        </button>
+    </main>
+
+    <script>
+        function redirecionarWhatsApp() {
+            const numeroTelefone = '48999192241';  
+            const mensagem = 'Olá, quero fazer um orçamento!'; 
+            const url = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, '_blank'); 
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #a7a1a1;
+}
+
+header {
+    background-color:  #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+header h1 {
+    display: flex;
+    position: absolute;
+}
+
+.slider {
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px 50px 90px 200px;
+}
+
+.container {
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.container img {
+    width: 25%;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+
+.legislacao {
+    display: flex; /* alinha os artigos lado a lado */
+    justify-content: space-around; /* espaço ao redor igual nos dois */
+    gap: 10%; /* espaçamento entre os artigos */
+    align-items: flex-start; /* alinha os textos no topo */
+    color: white; 
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+.legislacao article {
+    flex: 1; /* Ccda artigo ocupa o mesmo espaço */
+    max-width: 35%; /* largura máxima de cada artigo */
+    text-align: justify; /* deixa o texto alinhado em linhas retas */
+}
+
+.legislacao h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* espaco entre o título e o parsrafo */
+    text-align: center; 
+    color: white;
+}
+
+.legislacao p {
+    line-height: 1.6; /* espaco de linhas do texto */
+    color: #3d3535;
+}
+
+
+footer {
+    background-color:  black;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media (min-width: 775px) and (max-width: 900px) {
+    header {
+        padding: 25px; /* Aumenta o espaçamento interno */
+    }
+
+    header h1 {
+        font-size: 2.2rem; /* Torna o título maior */
+        margin: 0;
+    }
+
+    footer {
+        font-size: 1rem; /* Aumenta o tamanho da fonte */
+        padding: 1.5em; /* Aumenta o espaçamento interno */
+    }
+
+    body {
+        font-size: 95%; /* Ajusta o tamanho do texto do corpo */
+    }
+
+    main {
+        padding: 2em; 
+        text-align: center;
+    }
+
+    .slider {
+        max-width: 80%; /* Ajusta a largura máxima */
+        height: auto; /* Garante que as proporções sejam mantidas */
+        margin: auto;
+    }
+
+    nav a {
+        font-size: 1rem; /* Ajusta o tamanho das fontes nos links */
+        margin: 0 1em; /* Mantém espaçamento adequado */
+    }
+
+    .legislacao {
+        gap: 5%; /* Reduz o espaçamento entre os artigos */
+    }
+
+    .legislacao h2 {
+        font-size: 1.6rem; /* Torna os títulos mais destacados */
+    }
+
+    .legislacao p {
+        font-size: 1rem; /* Aumenta um pouco o texto */
+    }
+}
+
+
+
+@media (max-width: 770px) {
+    body {
+        font-size: 90%; /* Reduz o tamanho geral da fonte */
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Ajusta o tamanho do título */
+    }
+
+    .slider {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px 50px 90px 200px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 0 0.5em;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .legislacao {
+        flex-direction: column; /* Empilha os artigos verticalmente */
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .legislacao article {
+        max-width: 90%; /* Ocupa quase toda a largura */
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 0.5em;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 0.8rem; /* Reduz ainda mais o tamanho do texto */
+    }
+
+    .slider {
+        border-radius: 10px 50px 90px 150px;
+    }
+    .legislacao h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

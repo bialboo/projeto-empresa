@@ -1,0 +1,70 @@
+.sobre {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no topo */
+    justify-content: flex-start; /* Coloca os itens próximos à esquerda */
+    padding: 50px;
+    gap: 15%; /* Espaçamento entre a imagem e os textos */
+    background-color: #333;
+    border-radius: 10px 50px 90px 200px;
+}
+
+.sobre img {
+    max-width: 50%; /* Ajuste a largura da imagem conforme necessário */
+    height: auto;
+    padding: 0; /* Remove o padding para alinhamento correto */
+    border-radius: 10%;
+}
+
+.sobre article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 20px; /* Espaçamento entre os artigos */
+    max-width: 40%; /* Limita a largura do texto */
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.sobre h1 {
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.1;
+    margin: 0; /* Remove margens extras */
+    margin-bottom: 20px; /* Espaço entre o título e os parágrafos */
+    align-self: flex-start; /* Garante que o título fique alinhado ao topo */
+}
+
+.sobre p {
+    font-weight: normal;
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.5;
+    color: white;
+    margin: 0; /* Remove margens extras */
+}
+
+
+
+
+@media (max-width: 770px) {
+    .sobre {
+        flex-direction: column; /* Empilha o conteúdo verticalmente */
+        align-items: center; /* Centraliza os elementos */
+        gap: 30px; /* Ajusta o espaçamento entre a imagem e os textos */
+        padding: 30px; /* Mantém um espaçamento confortável */
+    }
+
+    .sobre img {
+        max-width: 70%; /* Torna a imagem mais ampla */
+        margin-bottom: 20px; /* Espaço abaixo da imagem */
+    }
+
+    .sobre article {
+        max-width: 90%; /* Ajusta os textos para ocupar mais espaço */
+        margin: 0 auto; /* Centraliza o artigo */
+    }
+    footer {
+        font-size: 0.9em; /* Reduz o tamanho da fonte no rodapé */
+        padding: 0.5em; /* Diminui o espaçamento interno */
+    }
+}
