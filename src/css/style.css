@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,9 @@ body {
 }
 
 header {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    font-style: normal;
     background-color:  #000000;
     color: #fff;
     text-align: center;
@@ -26,7 +31,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: fundoMudar 20s linear infinite;
+    animation: fundoMudar 15s linear infinite;
 }
 
 @keyframes fundoMudar {
@@ -34,13 +39,26 @@ header {
         background-image: url(../img/projeto1/casa.png);
     }
 
-    25% {
+    20% {
+        background-image: url(../img/projeto1/casa.png);
+    }
+
+    40% {
         background-image: url(../img/projeto2/areagourmet2.png);
     }
 
-    45% {
+    60% {
+        background-image: url(../img/projeto2/areagourmet2.png);
+    }
+
+    80% {
         background-image: url(../img/projeto4/escritorio.png);
     }
+
+    95% {
+        background-image: url(../img/projeto4/escritorio.png);
+    }
+
 }
 
 
@@ -76,7 +94,7 @@ header {
 .conteudo h1 {
     text-align: center;
     font-size: 35px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .conteudo p {
@@ -106,14 +124,15 @@ header {
 
 nav {
     text-align: center;
-    padding: 10px;
-    padding-top: 30px;
+    padding: 20px;
     color: #fff;
 }
 
 nav a {
     color: #fff;
     margin: 0 1em;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -188,38 +207,30 @@ footer {
 
 
 @media (min-width: 775px) and (max-width: 900px) {
-    header {
-        padding: 25px; /* Aumenta o espaçamento interno */
-    }
-
-    header h1 {
-        font-size: 2.2rem; /* Torna o título maior */
-        margin: 0;
-    }
-
-    footer {
-        font-size: 1rem; /* Aumenta o tamanho da fonte */
-        padding: 1.5em; /* Aumenta o espaçamento interno */
-    }
 
     body {
         font-size: 95%; /* Ajusta o tamanho do texto do corpo */
+    }
+    
+    .conteudo {
+        margin: 40px;
+    }
+    
+    .conteudo h1 {
+        font-size: 30px;
+    }
+    
+    .conteudo p {
+        font-size: 15px;
+    }
+    
+    .conteudo button {
+        font-size: 15px;
     }
 
     main {
         padding: 2em; 
         text-align: center;
-    }
-
-    .slider {
-        max-width: 80%; /* Ajusta a largura máxima */
-        height: auto; /* Garante que as proporções sejam mantidas */
-        margin: auto;
-    }
-
-    nav a {
-        font-size: 1rem; /* Ajusta o tamanho das fontes nos links */
-        margin: 0 1em; /* Mantém espaçamento adequado */
     }
 
     .legislacao {
@@ -239,30 +250,23 @@ footer {
 
 @media (max-width: 770px) {
     body {
-        font-size: 90%; /* Reduz o tamanho geral da fonte */
+        font-size: 90%; /* Ajusta o tamanho do texto do corpo */
     }
-
-    header {
-        padding: 15px;
+    
+    .conteudo {
+        margin: 40px;
     }
-
-    header h1 {
-        font-size: 1.5rem; /* Ajusta o tamanho do título */
+    
+    .conteudo h1 {
+        font-size: 25px;
     }
-
-    .slider {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px 50px 90px 200px;
+    
+    .conteudo p {
+        font-size: 15px;
     }
-
-    nav {
-        padding: 10px;
-    }
-
-    nav a {
-        margin: 0 0.5em;
-        font-size: 0.9rem;
+    
+    .conteudo button {
+        font-size: 15px;
     }
 
     main {
@@ -279,25 +283,16 @@ footer {
         max-width: 90%; /* Ocupa quase toda a largura */
     }
 
-    footer {
-        font-size: 0.9rem;
-        padding: 0.5em;
-    }
+
 }
 
 @media (max-width: 480px) {
     nav a {
-        font-size: 0.8rem; /* Reduz ainda mais o tamanho do texto */
+        font-size: 15px;
     }
 
-    .slider {
-        border-radius: 10px 50px 90px 150px;
-    }
     .legislacao h2 {
         font-size: 1.2rem;
     }
 
-    footer {
-        font-size: 0.8rem;
-    }
 }
