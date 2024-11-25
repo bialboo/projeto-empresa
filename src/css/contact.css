@@ -36,7 +36,7 @@ main {
     padding: 2em;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* deixa as info umabembaixo da outra */
     border-radius: 5%;
     background-color: #ffffff;
     gap: 1rem;
@@ -55,12 +55,12 @@ main {
     justify-content: center;
     color: white;
     border: none;
-    padding: 1em; /* Reduz o espaçamento interno */
-    width: 300px;
+    padding: 1em; /* menor espaço interno */
+    width: 300px; /* largura do botao pra n ficar enorme */
     font-size: 14px; 
     border-radius: 32px;
-    cursor: pointer;
-    margin: 0 auto; 
+    cursor: pointer; /* quando passa o mouse por cima ele fica um dedinho apontando */
+    margin: 0 auto;  /* centraliza */
     transition: background-color 0.3s ease;
 }
 

@@ -28,10 +28,10 @@ header {
     width: 100%;
     height: 100vh;
     background-image: url('../img/projeto1/casa.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat;  /* nao faz duplicadas */
+    background-size: cover;  /* cobre tudo*/
     background-position: center;
-    animation: fundoMudar 15s linear infinite;
+    animation: fundoMudar 15s linear infinite;  /* deixa a animacao mexendo em linha por 15s e repete */
 }
 
 @keyframes fundoMudar {
@@ -62,7 +62,7 @@ header {
 }
 
 
-/* filtro de cor */
+/* filtro praas imagens ficarem mais apagadas */
 .filtro {
     position: absolute;
     width: 100%;
@@ -73,14 +73,14 @@ header {
 }
 
 .container-conteudo {
-    position: relative;
+    position: relative;  /* relativo ao fundo */
     width: 100%;
     height: 100%;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;  /* deixa as info uma embaixo da outra*/
     z-index: 2; /* altera a camada */
 }
 
@@ -106,20 +106,20 @@ header {
 .conteudo button {
     color: #ffffff;
     border: none;
-    outline: none;
+    outline: none;  /* borda cor do botao */
     font-size: 18px;
     background-color: #48134d;
     padding: 14px 22px;
-    text-transform: uppercase;
+    text-transform: uppercase;  /* deixa os texto do botao em maiusculoo no automatico*/
     border-radius: 22px;
-    transition: .5s;
+    transition: .5s;  /* transicao da mudanca de cor pro hover*/
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.664);
     font-weight: bolder;
 }
 
 .conteudo button:hover {
     background-color: #73358b;
-    cursor: pointer;
+    cursor: pointer;  /* cursor dedinho */
 }
 
 nav {
@@ -133,7 +133,7 @@ nav a {
     margin: 0 1em;
     font-family: Arial, sans-serif;
     font-size: 18px;
-    text-decoration: none;
+    text-decoration: none;   /* sem linha automatica do link*/
 }
 
 main {
@@ -175,7 +175,7 @@ main {
 }
 
 .legislacao article {
-    flex: 1; /* Ccda artigo ocupa o mesmo espaço */
+    flex: 1; /* ccda artigo ocupa o mesmo espaço */
     max-width: 35%; /* largura máxima de cada artigo */
     text-align: justify; /* deixa o texto alinhado em linhas retas */
 }
@@ -198,101 +198,4 @@ footer {
     color: #fff;
     padding: 1em;
     text-align: center;
-}
-
-
-
-
-
-
-
-@media (min-width: 775px) and (max-width: 900px) {
-
-    body {
-        font-size: 95%; /* Ajusta o tamanho do texto do corpo */
-    }
-    
-    .conteudo {
-        margin: 40px;
-    }
-    
-    .conteudo h1 {
-        font-size: 30px;
-    }
-    
-    .conteudo p {
-        font-size: 15px;
-    }
-    
-    .conteudo button {
-        font-size: 15px;
-    }
-
-    main {
-        padding: 2em; 
-        text-align: center;
-    }
-
-    .legislacao {
-        gap: 5%; /* Reduz o espaçamento entre os artigos */
-    }
-
-    .legislacao h2 {
-        font-size: 1.6rem; /* Torna os títulos mais destacados */
-    }
-
-    .legislacao p {
-        font-size: 1rem; /* Aumenta um pouco o texto */
-    }
-}
-
-
-
-@media (max-width: 770px) {
-    body {
-        font-size: 90%; /* Ajusta o tamanho do texto do corpo */
-    }
-    
-    .conteudo {
-        margin: 40px;
-    }
-    
-    .conteudo h1 {
-        font-size: 25px;
-    }
-    
-    .conteudo p {
-        font-size: 15px;
-    }
-    
-    .conteudo button {
-        font-size: 15px;
-    }
-
-    main {
-        padding: 1em;
-    }
-
-    .legislacao {
-        flex-direction: column; /* Empilha os artigos verticalmente */
-        gap: 2rem;
-        align-items: center;
-    }
-
-    .legislacao article {
-        max-width: 90%; /* Ocupa quase toda a largura */
-    }
-
-
-}
-
-@media (max-width: 480px) {
-    nav a {
-        font-size: 15px;
-    }
-
-    .legislacao h2 {
-        font-size: 1.2rem;
-    }
-
 }
