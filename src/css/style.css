@@ -199,3 +199,96 @@ footer {
     padding: 1em;
     text-align: center;
 }
+
+
+
+@media (min-width: 775px) and (max-width: 900px) {
+
+    body {
+        font-size: 95%; /* Ajusta o tamanho do texto do corpo */
+    }
+    
+    .conteudo {
+        margin: 40px;
+    }
+    
+    .conteudo h1 {
+        font-size: 30px;
+    }
+    
+    .conteudo p {
+        font-size: 15px;
+    }
+    
+    .conteudo button {
+        font-size: 15px;
+    }
+
+    main {
+        padding: 2em; 
+        text-align: center;
+    }
+
+    .legislacao {
+        gap: 5%; /* Reduz o espaçamento entre os artigos */
+    }
+
+    .legislacao h2 {
+        font-size: 1.6rem; /* Torna os títulos mais destacados */
+    }
+
+    .legislacao p {
+        font-size: 1rem; /* Aumenta um pouco o texto */
+    }
+}
+
+
+
+@media (max-width: 770px) {
+    body {
+        font-size: 90%; /* Ajusta o tamanho do texto do corpo */
+    }
+    
+    .conteudo {
+        margin: 40px;
+    }
+    
+    .conteudo h1 {
+        font-size: 25px;
+    }
+    
+    .conteudo p {
+        font-size: 15px;
+    }
+    
+    .conteudo button {
+        font-size: 15px;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .legislacao {
+        flex-direction: column; /* Empilha os artigos verticalmente */
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .legislacao article {
+        max-width: 90%; /* Ocupa quase toda a largura */
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 15px;
+    }
+
+    .legislacao h2 {
+        font-size: 1.2rem;
+    }
+
+}
